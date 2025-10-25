@@ -8,5 +8,5 @@ import (
 
 func main() {
 	http.HandleFunc("/api/hello", handler.Hello)
-	http.ListenAndServe(":5173", nil)
+	http.ListenAndServe(":3000", nil)
 }
