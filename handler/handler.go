@@ -14,8 +14,8 @@ func New(db *sql.DB) http.Handler {
 
 	mux := http.NewServeMux()
 
-	mux.HandleFunc("/hello", h.hello)
-	mux.HandleFunc("/users", h.users)
+	mux.HandleFunc("/api/hello", h.hello)
+	mux.HandleFunc("/api/users", h.users)
 
 	return mux
 }
